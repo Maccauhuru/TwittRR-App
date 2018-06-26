@@ -18,6 +18,7 @@
 
 /* .message {}
 */
+
 /*.handle-name {} 
 */
 
@@ -27,7 +28,28 @@
     margin-right: 0.3em;
 }
 
-.handle {
-    color: #8899a6;
+.handle-name {
+    color: #08a0e9;
     font-size: 0.8125rem;
+}
+
+.time {
+    padding-left: 0.3em;
+    color: #08a0e9;
+}
+
+.time::before {
+    content: "\00b7";
+    padding-right: 0.3em;
+}
+
+.buttons {
+    margin-top: 0.625rem;
+    margin-left: 0.125rem;
+    font-size: 1.4em;
+    color: #08a0e9;
+}
+
+.buttons i {
+    width: 5rem;
 }
