@@ -1,9 +1,11 @@
 import React from 'react'
+import moment from 'moment';
 
-const LastActive= () => {
+const LastActive = ({time}) => {
+const timeString = moment(time).fromNow();
   return (
-    <span className = "time" >
-      3h ago
+    <span className ="time">
+      {timeString}
     </span>
   )
 }

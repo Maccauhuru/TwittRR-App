@@ -1,10 +1,11 @@
 import React from 'react'
 
-const HandleName = () => {
+const HandleName = ({ handleName , name }) => {
+  const showHandleName = `@${handleName}`
   return (
     <span className="handle-name">
-        <span className="name">Your Name</span>
-        <span className="handle">@yourhandle</span>
+        <span className="name">{name}</span>
+        <span className="handle">{showHandleName}</span>
     </span>
   )
 }

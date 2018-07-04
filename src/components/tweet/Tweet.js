@@ -5,19 +5,20 @@ import HandleName from './HandleName';
 import LastActive from './LastActive';
 import Buttons from './Buttons';
 
-const Tweet=()=>{
+
+const Tweet=({ tweet })=>{
 return(
     <div className='tweet'>
-    <Avatar/>
+    <Avatar hash={tweet.gravatar}/>
     <div className='content'>
-    <HandleName/><LastActive />
-    <Message />
+    <HandleName handleName={tweet.author.handle} name={tweet.author.name}/><LastActive time={tweet.timestamp}/>
+    <Message text={tweet.message} />
     <Buttons />
     </div>
-   
-    
     </div>
 )
 }
+
+
 
 export default Tweet;
