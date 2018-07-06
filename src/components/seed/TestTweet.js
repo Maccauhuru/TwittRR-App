@@ -5,9 +5,9 @@ var TestTweet = {
         handle: "maccauhuru",
         name: "Maccauhuru"
     },
-    likes: 2,
-    retweets: 0,
-    timestamp: "2018-06-30 21:24:37"
+    likes: 55,
+    retweets: 2000,
+    timestamp: "2018-07-04 21:24:37"
 };
 
 export default TestTweet;
