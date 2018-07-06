@@ -2,7 +2,7 @@ import React from 'react';
 
 const ReplyButton =() => {
   return (
-    <i className = 'fa fa-retweet retweet-button' />
+    <i className = 'fa fa-reply reply-button' />
   )
 }
 

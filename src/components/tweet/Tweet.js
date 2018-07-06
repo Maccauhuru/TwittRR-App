@@ -13,7 +13,7 @@ return(
     <div className='content'>
     <HandleName handleName={tweet.author.handle} name={tweet.author.name}/><LastActive time={tweet.timestamp}/>
     <Message text={tweet.message} />
-    <Buttons />
+    <Buttons count={tweet.likes} counter={tweet.retweets}/>
     </div>
     </div>
 )

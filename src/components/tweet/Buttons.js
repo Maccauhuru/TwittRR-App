@@ -4,12 +4,12 @@ import RetweetButton from './RetweetButton';
 import LikeButton from './LikeButton';
 import MoreOptionsButton from './MoreOptionsButton';
 
-const Buttons= () => {
+const Buttons= ({count,counter}) => {
   return (
     <div className="buttons">
       <ReplyButton />
-      <RetweetButton />
-      <LikeButton />
+      <RetweetButton counter={counter}/>
+      <LikeButton count={count}/>
       <MoreOptionsButton />
     </div>
   )
