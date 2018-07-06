@@ -2,15 +2,7 @@ import React from 'react'
 
 
 function getRetweetCount(counter) {
-if(counter > 0) {
-return (
-<span className="retweet-count">
-{counter}
-</span>
-);
-} else {
-return null;
-}
+ return (counter > 0)?  (<span className="retweet-count">{counter}</span>) : null;
 }
 
 const RetweetButton = ({ counter }) => (
