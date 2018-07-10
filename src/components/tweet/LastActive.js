@@ -1,5 +1,6 @@
 import React from 'react'
 import moment from 'moment';
+import PropTypes from 'prop-types';
 
 const LastActive = ({time}) => {
 const timeString = moment(time).fromNow();
@@ -11,3 +12,7 @@ const timeString = moment(time).fromNow();
 }
 
 export default LastActive;
+
+LastActive.propTypes = {
+  time : PropTypes.string.isRequired
+}
