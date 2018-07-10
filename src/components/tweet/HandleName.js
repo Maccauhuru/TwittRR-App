@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const HandleName = ({ handleName , name }) => {
   const showHandleName = `@${handleName}`
@@ -8,6 +9,11 @@ const HandleName = ({ handleName , name }) => {
         <span className="handle">{showHandleName}</span>
     </span>
   )
+}
+
+HandleName.propTypes ={
+  name : PropTypes.string.isRequired,
+  handleName : PropTypes.string.isRequired
 }
 
 
